@@ -1,0 +1,20 @@
+input{
+    display: inline;
+}
+canvas  {
+    border: solid;
+    width: 90vw;
+    height: 45vw;
+}
+
+button {
+    background-color: #EEEEEE;
+}
+button.button-active{
+    background-color: #BBBBBB;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom:0;
+}

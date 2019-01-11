@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ball Bounce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <input type="checkbox" id="friction" onclick="toggleProp('friction')"> Friction
+    <input type="checkbox" id="gravity" checked onclick="toggleProp('gravity')"> Gravity 
+    <input type="checkbox" id="drag" onclick="toggleProp('drag')"> Drag
+    <input type="checkbox" id="objectGravity" onclick="toggleProp('objectGravity')"> Object Gravity
+    <input type="checkbox" id="edges" onclick="toggleProp('edges')" checked> Edges
+    <button id="windLeft" onmouseup="toggleProp('windLeft')" onmousedown="toggleProp('windLeft')"><</button> Wind
+    <button id="windRight" onmouseup="toggleProp('windRight')" onmousedown="toggleProp('windRight')">></button>
+    <br>
+    <canvas id="myCanvas"></canvas>
+    <p>Enter to spawn balls, the first letter of each checkbox to toggle those with keyboard, and left and right arrow keys for wind, you can also click and hold on the screen
+        when using Object Gravity.
+    </p>
+    <script src="main.js"></script>
+</body>
+</html>
